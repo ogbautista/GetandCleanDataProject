@@ -4,6 +4,8 @@ author: "Oscar"
 date: "04/26/2015"
 ---
 
+This script takes information from to files, those files have the same number of variables, from which we are going to take a subset and merge the observations from both files, then apply the mean by two subgroups:
+
 First, save all the file names into variables to make the code more readable
 ```{r}
 testFile <- "./Data/UCI HAR Dataset/test/X_test.txt"
@@ -87,9 +89,9 @@ uniqueFactors <- t(sapply(dataSetSplit, function(x) c (x[1,1], as.character(x[1,
 dataSetMean <- cbind(data.frame(uniqueFactors), dataSetMean)
 ```
 
-This is -hopefully- 
+This is -hopefully- the result that the user want to see, finally write the data to a file:
 ```{r}
-
+write.table(dataSetMean, "./Data/UCI HAR Dataset/train_test_mean.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
 ```
 
 
