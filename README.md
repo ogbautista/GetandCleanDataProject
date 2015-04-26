@@ -94,12 +94,3 @@ This is -hopefully- the result that the user want to see, finally write the data
 write.table(dataSetMean, "./Data/UCI HAR Dataset/train_test_mean.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
 ```
 
-
-```{r}
-
-```
-
-
-```{r}
-
-```
