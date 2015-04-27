@@ -4,7 +4,7 @@ author: "Oscar"
 date: "04/26/2015"
 ---
 
-This script takes information from to files, those files have the same number of variables, from which we are going to take a subset and merge the observations from both files, then apply the mean by two subgroups:
+This script takes information from two files, which have the same number of variables but different observations. From those files we are going to take a subset of columns and merge the observations in one single database, then apply the mean by two subgroups: Subject and Activity:
 
 First, save all the file names into variables to make the code more readable
 ```{r}
